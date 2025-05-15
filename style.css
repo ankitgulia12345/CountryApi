@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Nunito;
+}
+main{
+    padding: 24px;
+}
+a{
+    text-decoration-line:none ;
+    color: inherit;
+}
+.header-container{
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+    padding-inline: 24px;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-inline: auto;
+}
+.title{
+    font-weight: 800;
+}
+.countries-container{
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 16px;
+    display: flex;
+    gap: 64px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.country-card{
+   display: inline-block;
+   width: 250px;
+   border-radius: 4px;
+   overflow: hidden;
+   box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
+   padding-bottom: 24px;
+   transition: all 0.2s ease-in-out;
+}
+.country-card:hover{
+   transform: scale(1.03);
+   box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2);
+}
+.card-title{
+    font-size: 24px;
+    margin-block: 16px;
+}
+.card-text{
+    padding-inline: 16px;
+}
+.card-text p{
+    margin-block: 8px;
+}
+.country-card img{
+    width: 100%;
+}
+
+/* Wrapper to align them in one row */
+.search-bar,
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 1rem;
+}
+
+.search-bar {
+  flex: 1;
+}
+
+.filter-container {
+  justify-content: flex-end;
+}
+
+
+
+
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+/* search input styling */
+#searchInput {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/* region select styling */
+#region-filter {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+
+@media(max-width: 670px) {
+    .countries-container {
+    justify-content: center;
+    }
+    }
+
+
+
+
+
+/* country.html file wali css hai ye */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .back-button {
+    margin-bottom: 40px;
+  }
+  
+  .back-link {
+    background-color: white;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .content {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .flag-img {
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .info h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  
+  .info-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  
+  .info-columns div {
+    width: 45%;
+  }
+  
+  .info-columns p {
+    margin: 6px 0;
+    font-size: 16px;
+  }
+  
+  .info-columns p strong {
+    font-weight: 600;
+  }
+  
+  .border-buttons span {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 6px 18px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  .border-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #eee;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .border-button:hover {
+    background-color: #ddd;
+  }
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Root theme variables */
+:root {
+    --bg-color: hsl(0, 0%, 98%);
+    --element-bg: white;
+    --text-color: hsl(200, 15%, 8%);
+  }
+  
+  body.dark-mode {
+    --bg-color: hsl(207, 26%, 17%);
+    --element-bg: hsl(209, 23%, 22%);
+    --text-color: white;
+  }
+  
+  /* Transition for smooth mode switch */
+  body,
+  .header-container,
+  .search-bar,
+  .country-card,
+  input,
+  .card-text,
+  .card-title {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Apply the theme using the variables */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .header-container,
+  .search-bar,
+  .country-card {
+    background-color: var(--element-bg);
+    color: var(--text-color);
+  }
+  
+  input {
+    background-color: var(--element-bg);
+    color: var(--text-color);
+    border: none;
+  }
+  
