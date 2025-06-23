@@ -35,7 +35,7 @@ const regionFilter = document.getElementById('region-filter');
 let allCountries = [];
 
 // Fetch and store all countries
-fetch("https://restcountries.com/v3.1/all")
+fetch("https://restcountries.com/v3.1/all?fields=name,population,capital,region,flags")
   .then(res => res.json())
   .then(data => {
     allCountries = data;
